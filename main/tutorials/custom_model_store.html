@@ -2627,7 +2627,7 @@ from molfeat.store import ModelInfo</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'gs://molfeat-store-prod/artifacts/'</pre>
+<pre>'https://fs.molfeat.datamol.io/artifacts/'</pre>
 </div>
 </div>
 </div>
@@ -2946,7 +2946,7 @@ default_store.search(type="pretrained", representation="graph")</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="creating-a-custom-model-store">Creating a Custom Model Store<a class="anchor-link" href="#creating-a-custom-model-store">¶</a></h3><h4 id="model-store-bucket">Model Store Bucket<a class="anchor-link" href="#model-store-bucket">¶</a></h4><p>To create a custom model store, you need to specify a model store bucket path. By default, the code uses the read-only model store bucket located at <code>gs://molfeat-store-prod/artifacts/</code>. If you want to create a custom <code>modelstore</code> that includes the content of the default bucket, you can copy its contents to your custom bucket.</p>
+<h3 id="creating-a-custom-model-store">Creating a Custom Model Store<a class="anchor-link" href="#creating-a-custom-model-store">¶</a></h3><h4 id="model-store-bucket">Model Store Bucket<a class="anchor-link" href="#model-store-bucket">¶</a></h4><p>To create a custom model store, you need to specify a model store bucket path. By default, the code uses the read-only model store bucket located at <code>https://fs.molfeat.datamol.io/artifacts/</code>. If you want to create a custom <code>modelstore</code> that includes the content of the default bucket, you can copy its contents to your custom bucket.</p>
 <p>There are two key concepts to understand when building a custom <code>modelstore</code>:</p>
 <ol>
 <li><p>Readable and Writable Path: You need to provide a local or remote folder path that is compatible with <a href="https://github.com/fsspec/filesystem_spec">fsspec</a>. This path will serve as your model store bucket, allowing you to store and access models.</p>
@@ -3468,7 +3468,7 @@ model = PretrainedDGLTransformer(kind="tmp_gin_supervised_infomax", dtype=float)
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'gs://molfeat-store-prod/artifacts/'</pre>
+<pre>'https://fs.molfeat.datamol.io/artifacts/'</pre>
 </div>
 </div>
 </div>
