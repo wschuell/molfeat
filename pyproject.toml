@@ -9,7 +9,7 @@ dynamic = ["version"]
 authors = [{ name = "Emmanuel Noutahi", email = "emmanuel.noutahi@hotmail.ca" }]
 readme = "README.md"
 license = { text = "Apache" }
-requires-python = ">=3.9,<3.11"
+# requires-python = ">=3.9,<3.11"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
@@ -95,8 +95,8 @@ include-package-data = true
 zip-safe = false
 license-files = ["LICENSE"]
 
-[tool.setuptools_scm]
-fallback_version = "dev"
+# [tool.setuptools_scm]
+# fallback_version = "dev"
 
 [tool.setuptools.packages.find]
 where = ["."]
